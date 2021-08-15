@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-// json-server .\mocks\data\mock-data.json
+// run server :: json-server .\mocks\data\mock-data.json
   server_url: "http://localhost:3000" // 
 };
 
