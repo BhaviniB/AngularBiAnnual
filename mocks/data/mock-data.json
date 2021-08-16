@@ -1,51 +1,101 @@
 {
-    "users":[
-        {
-            "email":"admin@nagp.com",
-            "password":"adminadmin",
-            "type": "admin"
-        },
-        {
-            "email":"normaluser@nagp.com",
-            "password":"normaluser",
-            "type": "normal"
-
-        }
-    ],
-    "patients":[
-        {
-            "id":1,
-            "patientName": "Patient 1",
-            "gender": "female",
-            "age":10,
-            "address": "add 1",
-            "city": "city 1",
-            "mobileNo":109900,
-            "email": "email@gmail.com",
-            "symptoms": ["cough", "cold"]
-        },
-        {
-            "id":2,
-            "patientName": "Patient 2",
-            "gender": "female",
-            "age":10,
-            "address": "add 2",
-            "city": "city 2",
-            "mobileNo":109900,
-            "email": "email@gmail.com",
-            "symptoms": ["cough", "cold"]
-        },
-        {
-            "id":2,
-            "patientName": "Patient 3",
-            "gender": "female",
-            "age":10,
-            "address": "add 2",
-            "city": "city 2",
-            "mobileNo":109900,
-            "email": "email@gmail.com",
-            "symptoms": ["cough", "cold"]
-        }
-
-    ]
+  "users": [
+    {
+      "email": "admin@nagp.com",
+      "password": "adminadmin",
+      "type": "admin"
+    },
+    {
+      "email": "normaluser@nagp.com",
+      "password": "normaluser",
+      "type": "normal"
+    }
+  ],
+  "patients": [
+    {
+      "id": "77",
+      "patientName": "Bhavini",
+      "gender": "female",
+      "address": "add",
+      "age": "7",
+      "city": "Dehradun",
+      "mobileNo": "98987986876",
+      "email": "bhavinibatrawork@gmail.com",
+      "hasFever": true,
+      "hasWeakness": true,
+      "hasHeadache": true,
+      "hasSkin": false,
+      "hasWeight": false,
+      "hasToothache": false,
+      "hasEyesight": false
+    },
+    {
+      "id": "10",
+      "patientName": "Dummy",
+      "gender": "male",
+      "address": "add2",
+      "age": "7",
+      "city": "city",
+      "mobileNo": "787586587",
+      "email": "bhavinibatrawork@gmail.com",
+      "hasFever": false,
+      "hasWeakness": false,
+      "hasHeadache": false,
+      "hasSkin": false,
+      "hasWeight": false,
+      "hasToothache": true,
+      "hasEyesight": false
+    },
+    {
+      "id": "nusMlr-",
+      "patientName": "",
+      "gender": "",
+      "address": "",
+      "age": "",
+      "city": "",
+      "mobileNo": "",
+      "email": "",
+      "hasFever": true,
+      "hasWeakness": false,
+      "hasHeadache": false,
+      "hasSkin": false,
+      "hasWeight": false,
+      "hasToothache": false,
+      "hasEyesight": false
+    },
+    {
+      "id": "1",
+      "patientName": "hiuhi",
+      "gender": "jiujni",
+      "address": "huihiu",
+      "age": "90",
+      "city": "hiu",
+      "mobileNo": "8990",
+      "email": "bhavinibatrawork@gmail.com",
+      "hasFever": false,
+      "hasWeakness": true,
+      "hasHeadache": true,
+      "hasSkin": false,
+      "hasWeight": false,
+      "hasToothache": false,
+      "hasEyesight": false
+    },
+    {
+      "id": "100",
+      "patientName": "kjhj",
+      "gender": "hjj",
+      "address": "kjhjkh",
+      "age": "9",
+      "city": "jkkh",
+      "mobileNo": "9909",
+      "email": "bhavinibatrawork@gmail.com",
+      "hasFever": true,
+      "hasWeakness": false,
+      "hasHeadache": false,
+      "hasSkin": false,
+      "hasWeight": false,
+      "hasToothache": false,
+      "hasEyesight": false
+    }
+  ]
 }

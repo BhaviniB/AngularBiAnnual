@@ -1,1 +1,91 @@
-<p>add-patient works!</p>
+
+<br><br>
+<div class="section" style="width: 50%;
+margin: 0 auto;">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="text-center">ADD</h2>
+      <form [formGroup]="addForm" (ngSubmit)="submitAddForm(addForm.value)">
+        <label for="id" class="label-control">Id:</label>
+        <input autocomplete type="text" placeholder="id" formControlName="id" class="form-control">
+        <br>
+        <div class="form-group">
+          <label for="patientName" class="label-control">Name:</label>
+          <input autocomplete type="patientName" placeholder="patientName" formControlName="patientName"
+            class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="gender" class="label-control">gender:</label>
+            <input autocomplete type="gender" placeholder="gender" formControlName="gender"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="address" class="label-control">address:</label>
+            <input autocomplete type="address" placeholder="address" formControlName="address"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="age" class="label-control">age:</label>
+            <input autocomplete type="age" placeholder="age" formControlName="age"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="city" class="label-control">city:</label>
+            <input autocomplete type="city" placeholder="city" formControlName="city"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="mobileNo" class="label-control">mobileNo:</label>
+            <input autocomplete type="mobileNo" placeholder="mobileNo" formControlName="mobileNo"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="email" class="label-control">email:</label>
+            <input autocomplete type="email" placeholder="email" formControlName="email"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="hasFever" class="label-control">hasFever:</label>
+            <input autocomplete type="checkbox" placeholder="symptoms" formControlName="hasFever"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="hasWeakness" class="label-control">hasWeakness:</label>
+            <input autocomplete type="checkbox" placeholder="symptoms" formControlName="hasWeakness"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="hasHeadache" class="label-control">hasHeadache:</label>
+            <input autocomplete type="checkbox" placeholder="hasHeadache" formControlName="hasHeadache"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="hasWeight" class="label-control">hasWeight:</label>
+            <input autocomplete type="checkbox" placeholder="hasWeight" formControlName="hasWeight"
+              class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="hasToothache" class="label-control">hasToothache:</label>
+            <input autocomplete type="checkbox" placeholder="hasToothache" formControlName="hasToothache"
+              class="form-control">
+          </div> <div class="form-group">
+            <label for="hasEyesight" class="label-control">hasEyesight:</label>
+            <input autocomplete type="checkbox" placeholder="hasEyesight" formControlName="hasEyesight"
+              class="form-control">
+          </div> <div class="form-group">
+            <label for="hasSkin" class="label-control">hasSkin:</label>
+            <input autocomplete type="checkbox" placeholder="hasSkin" formControlName="hasSkin"
+              class="form-control">
+          </div>
+        <br><br><br>
+        <br>
+        <div class="text-center pb-2">
+
+          <button type="submit" class="btn btn-primary mb-4"  [disabled]="! addForm.valid">SAVE</button>
+          <!-- <button type="submit" class="btn btn-primary mb-4"  >Cancel</button> -->
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

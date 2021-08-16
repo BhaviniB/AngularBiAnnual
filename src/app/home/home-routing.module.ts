@@ -6,6 +6,7 @@ import { PatientsResolver } from '../shared/resolvers/Patients.resolver';
 import { PatientResolver } from '../shared/resolvers/Patient.resolver';
 import { PatientDetailsComponent } from './patient-details/patient-details.component';
 import { AuthGuard } from '../shared/guards/auth.guard';
+import { AddPatientComponent } from './add-patient/add-patient.component';
 
 
 const routes: Routes = [
@@ -15,14 +16,11 @@ const routes: Routes = [
     {path: '', loadChildren: () => import('../auth/auth.module').then(m => m.AuthModule)},
     {path: 'list', component: PatientListComponent, 
     resolve:{ patientList: PatientsResolver}, canActivate: [AuthGuard]},
-  // {path: 'add', component: AddProductComponent},
+  {path: 'add', component: AddPatientComponent},
   {path: 'patients/:patientId', component: PatientDetailsComponent, resolve: { patient: PatientResolver}},
   
   ]
   },
-  // {path: 'cart', component:CartComponent, 
-  // resolve:{ productList: CartResolver}},]
-  // },
   {path: '/', redirectTo: '', pathMatch: 'full'}
   ];
 

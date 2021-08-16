@@ -3,6 +3,15 @@
 Run server: json-server .\mocks\data\mock-data.json (localhost:3000)
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.0.
 
+# Users
+admin:
+      "email": "admin@nagp.com",
+      "password": "adminadmin",
+      "type": "admin"
+normal:
+      "email": "normaluser@nagp.com",
+      "password": "normaluser",
+      "type": "normal"
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

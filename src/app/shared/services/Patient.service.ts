@@ -5,28 +5,27 @@ import { environment } from 'src/environments/environment';
 import { Patient } from '../models/Patient';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class PatientService {
-  productUrl= environment.server_url+ '/patients/'
+  productUrl = environment.server_url + '/patients/';
 
-  constructor(private apiService: ApiService) { }
-  
-  getAllPatients() : Observable<Patient[]>{
-    return this.apiService.get(this.productUrl)
+  constructor(private apiService: ApiService) {}
+
+  getAllPatients(): Observable<Patient[]> {
+    return this.apiService.get(this.productUrl);
   }
-  getPatientById(id: string): Observable<Patient>{
+  getPatientById(id: string): Observable<Patient> {
     return this.apiService.get(this.productUrl + id);
   }
 
-  updatePatient(product): Observable<Patient>{
+  updatePatient(product): Observable<Patient> {
     return this.apiService.put(this.productUrl + '/' + product.id, product);
   }
-  deletePatient(id: string): Observable<Patient>{
-    debugger;
+  deletePatient(id: string): Observable<Patient> {
     return this.apiService.delete(this.productUrl + '/' + id);
   }
-  addPatient(ob: Patient): Observable<Patient>{
+  addPatient(ob: Patient): Observable<Patient> {
     return this.apiService.post(this.productUrl, ob);
   }
 }

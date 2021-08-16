@@ -7,5 +7,12 @@ export interface Patient{
     city: string
     mobileNo: number
     email: string
-    symptoms: string []
+    hasFever: boolean 
+    hasWeakness: boolean
+    hasHeadache: boolean
+    hasSkin: boolean
+    hasWeight: boolean
+    hasToothache: boolean
+    hasEyesight: boolean
+    // symptoms: string []
 }

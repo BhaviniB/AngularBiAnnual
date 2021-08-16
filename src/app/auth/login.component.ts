@@ -17,6 +17,8 @@ import { LoginService } from './login.service';
 export class LoginComponent implements OnInit {
   loginForm: FormGroup;
   isValid: boolean;
+  user: User ;
+
   constructor(
     private route: ActivatedRoute,
     private router: Router,
@@ -43,11 +45,15 @@ export class LoginComponent implements OnInit {
   }
 
   submitLoginForm(loginForm: User): void {
-    debugger
     this.isValid = this.loginService.validUser(loginForm);
     if (this.isValid) {
-      debugger
+    this.user =JSON.parse(sessionStorage.getItem('user'));
+      if(this.user.type=="admin"){
       this.router.navigateByUrl('/list');
+    }
+      else{
+        this.router.navigateByUrl('/add');
+      }
       sessionStorage.setItem('isLoggedIn', 'true');
     } else {
       this.router.navigateByUrl('/auth');
