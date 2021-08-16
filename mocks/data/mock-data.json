@@ -1,0 +1,51 @@
+{
+    "users":[
+        {
+            "email":"admin@nagp.com",
+            "password":"adminadmin",
+            "type": "admin"
+        },
+        {
+            "email":"normaluser@nagp.com",
+            "password":"normaluser",
+            "type": "normal"
+
+        }
+    ],
+    "patients":[
+        {
+            "id":1,
+            "patientName": "Patient 1",
+            "gender": "female",
+            "age":10,
+            "address": "add 1",
+            "city": "city 1",
+            "mobileNo":109900,
+            "email": "email@gmail.com",
+            "symptoms": ["cough", "cold"]
+        },
+        {
+            "id":2,
+            "patientName": "Patient 2",
+            "gender": "female",
+            "age":10,
+            "address": "add 2",
+            "city": "city 2",
+            "mobileNo":109900,
+            "email": "email@gmail.com",
+            "symptoms": ["cough", "cold"]
+        },
+        {
+            "id":2,
+            "patientName": "Patient 3",
+            "gender": "female",
+            "age":10,
+            "address": "add 2",
+            "city": "city 2",
+            "mobileNo":109900,
+            "email": "email@gmail.com",
+            "symptoms": ["cough", "cold"]
+        }
+
+    ]
+}
